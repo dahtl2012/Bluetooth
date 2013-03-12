@@ -32,6 +32,16 @@
 		B400ADB916EF69370028B6AD /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B400ADB816EF69370028B6AD /* libCorePlot-CocoaTouch.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B4860BF516EF83D900515CB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B400AD7016EF4CDE0028B6AD /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		400BF5D516E0979400CF6BF4 /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		400BF5D816E0979400CF6BF4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -176,6 +186,14 @@
 			name = PageControl;
 			sourceTree = "<group>";
 		};
+		B4860BF016EF83D900515CB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4860BF616EF83D900515CB1 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,12 +233,28 @@
 			mainGroup = 400BF5CC16E0979400CF6BF4;
 			productRefGroup = 400BF5D616E0979400CF6BF4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B4860BF016EF83D900515CB1 /* Products */;
+					ProjectRef = B400AD7016EF4CDE0028B6AD /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				400BF5D416E0979400CF6BF4 /* Thermometer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B4860BF616EF83D900515CB1 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = B4860BF516EF83D900515CB1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		400BF5D316E0979400CF6BF4 /* Resources */ = {

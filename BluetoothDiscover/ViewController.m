@@ -197,7 +197,7 @@
     
     xmin = 0;
     xmax = count - 1;
-    NSLog(@"%@", sortedArray);
+    
     self.plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0)
                                                          length:CPTDecimalFromFloat(ymax + 1)];
     self.plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(xmin)
@@ -227,4 +227,8 @@
     return nil;
 }
 
+- (IBAction)resetDiagram:(id)sender {
+    self.tempData = nil;
+    self.tempData = [[NSMutableArray alloc] init];
+}
 @end

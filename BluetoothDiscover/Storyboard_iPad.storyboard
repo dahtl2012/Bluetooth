@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="--.--°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OZu-bN-37k">
-                                <rect key="frame" x="20" y="644" width="728" height="70"/>
+                                <rect key="frame" x="20" y="689" width="728" height="70"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="68"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Umgebungstemperatur:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g7A-Pw-3Tb">
-                                <rect key="frame" x="64" y="588" width="259" height="48"/>
+                                <rect key="frame" x="57" y="633" width="259" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,6 +59,39 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qVd-mt-WDZ">
+                                <rect key="frame" x="679" y="275" width="65" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetDiagram:" destination="abU-9S-DvO" eventType="touchUpInside" id="zbz-TQ-bXr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GUJ-Jd-gaj">
+                                <rect key="frame" x="226" y="923" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Luftfeuchtigkeit:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mkd-OP-Xfk">
+                                <rect key="frame" x="57" y="767" width="259" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="--.-- %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jZa-pf-DFl">
+                                <rect key="frame" x="244" y="823" width="280" height="80"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="68"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -67,6 +100,7 @@
                         <outlet property="connectLabel" destination="IDM-72-OEd" id="niC-mt-gEc"/>
                         <outlet property="connectSwitch" destination="KJQ-HV-840" id="dPn-gR-Xat"/>
                         <outlet property="graphView" destination="t1H-eX-PMa" id="7PG-rK-MdU"/>
+                        <outlet property="humidityLabel" destination="jZa-pf-DFl" id="YFO-Xd-HKi"/>
                         <outlet property="tempAmbientLabel" destination="OZu-bN-37k" id="dtz-wn-J5Q"/>
                         <outlet property="tempLabel" destination="fZf-3d-6LL" id="mXg-lx-Din"/>
                     </connections>
@@ -166,6 +200,35 @@
             <point key="canvasLocation" x="2989" y="-178"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CPTGraphHostingView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CPTGraphHostingView.h"/>
+        </class>
+        <class className="CustomPagerViewController" superclassName="PagerViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomPagerViewController.h"/>
+        </class>
+        <class className="PagerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changePage:"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="connectSwitchSwitched:"/>
+                <relationship kind="action" name="resetDiagram:"/>
+                <relationship kind="outlet" name="connectLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="connectSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="graphView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="humidityLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tempAmbientLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

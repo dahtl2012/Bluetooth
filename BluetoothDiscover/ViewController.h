@@ -30,4 +30,5 @@
 @property CPTXYPlotSpace *plotSpace;
 @property int index;
 
+- (IBAction)resetDiagram:(id)sender;
 @end
