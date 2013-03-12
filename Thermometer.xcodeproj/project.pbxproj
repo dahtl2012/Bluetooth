@@ -27,6 +27,9 @@
 		4081F58C16EA18720033308E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4081F58B16EA18720033308E /* Icon.png */; };
 		B400AD6F16EF4A7A0028B6AD /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B400AD6E16EF4A7A0028B6AD /* Storyboard_iPad.storyboard */; };
 		B400AD7B16EF4DCC0028B6AD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B400AD7A16EF4DCC0028B6AD /* QuartzCore.framework */; };
+		B400ADB216EF5D960028B6AD /* CustomPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B400ADAF16EF5D950028B6AD /* CustomPagerViewController.m */; };
+		B400ADB316EF5D960028B6AD /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B400ADB116EF5D950028B6AD /* PagerViewController.m */; };
+		B400ADB916EF69370028B6AD /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B400ADB816EF69370028B6AD /* libCorePlot-CocoaTouch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,11 @@
 		B400AD6E16EF4A7A0028B6AD /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
 		B400AD7016EF4CDE0028B6AD /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "CorePlot/Source/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
 		B400AD7A16EF4DCC0028B6AD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B400ADAE16EF5D950028B6AD /* CustomPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPagerViewController.h; sourceTree = "<group>"; };
+		B400ADAF16EF5D950028B6AD /* CustomPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPagerViewController.m; sourceTree = "<group>"; };
+		B400ADB016EF5D950028B6AD /* PagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
+		B400ADB116EF5D950028B6AD /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
+		B400ADB816EF69370028B6AD /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCorePlot-CocoaTouch.a"; path = "../../../../Library/Developer/Xcode/DerivedData/Thermometer-gndxijbgfxjlzgegvctuagzyhvty/Build/Products/Debug-iphoneos/libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 				B400AD7B16EF4DCC0028B6AD /* QuartzCore.framework in Frameworks */,
 				400BF5FC16E097A300CF6BF4 /* CoreBluetooth.framework in Frameworks */,
 				400BF5D916E0979400CF6BF4 /* UIKit.framework in Frameworks */,
+				B400ADB916EF69370028B6AD /* libCorePlot-CocoaTouch.a in Frameworks */,
 				400BF5DB16E0979400CF6BF4 /* Foundation.framework in Frameworks */,
 				400BF5DD16E0979400CF6BF4 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -81,6 +90,7 @@
 		400BF5CC16E0979400CF6BF4 = {
 			isa = PBXGroup;
 			children = (
+				B400ADB816EF69370028B6AD /* libCorePlot-CocoaTouch.a */,
 				4081F58B16EA18720033308E /* Icon.png */,
 				4081F58916EA18690033308E /* Icon@2x.png */,
 				400BF5DE16E0979400CF6BF4 /* BluetoothDiscover */,
@@ -113,14 +123,8 @@
 		400BF5DE16E0979400CF6BF4 /* BluetoothDiscover */ = {
 			isa = PBXGroup;
 			children = (
-				4081F58316E9F5B70033308E /* BluetoothLEService+SensorTag.h */,
-				4081F58416E9F5B70033308E /* BluetoothLEService+SensorTag.m */,
-				4081F58516E9F5B70033308E /* SensorTag.h */,
-				4081F58616E9F5B80033308E /* SensorTag.m */,
-				400BF60516E09B7E00CF6BF4 /* BluetoothLEManager.h */,
-				400BF60616E09B7E00CF6BF4 /* BluetoothLEManager.m */,
-				400BF60716E09B7E00CF6BF4 /* BluetoothLEService.h */,
-				400BF60816E09B7E00CF6BF4 /* BluetoothLEService.m */,
+				B400ADB516EF5DB90028B6AD /* PageControl */,
+				B400ADB416EF5DA40028B6AD /* SensorTag Klassen */,
 				400BF5E716E0979400CF6BF4 /* AppDelegate.h */,
 				400BF5E816E0979400CF6BF4 /* AppDelegate.m */,
 				400BF5F016E0979400CF6BF4 /* ViewController.h */,
@@ -144,6 +148,32 @@
 				400BF5EE16E0979400CF6BF4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B400ADB416EF5DA40028B6AD /* SensorTag Klassen */ = {
+			isa = PBXGroup;
+			children = (
+				4081F58316E9F5B70033308E /* BluetoothLEService+SensorTag.h */,
+				4081F58416E9F5B70033308E /* BluetoothLEService+SensorTag.m */,
+				4081F58516E9F5B70033308E /* SensorTag.h */,
+				4081F58616E9F5B80033308E /* SensorTag.m */,
+				400BF60516E09B7E00CF6BF4 /* BluetoothLEManager.h */,
+				400BF60616E09B7E00CF6BF4 /* BluetoothLEManager.m */,
+				400BF60716E09B7E00CF6BF4 /* BluetoothLEService.h */,
+				400BF60816E09B7E00CF6BF4 /* BluetoothLEService.m */,
+			);
+			name = "SensorTag Klassen";
+			sourceTree = "<group>";
+		};
+		B400ADB516EF5DB90028B6AD /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				B400ADAE16EF5D950028B6AD /* CustomPagerViewController.h */,
+				B400ADAF16EF5D950028B6AD /* CustomPagerViewController.m */,
+				B400ADB016EF5D950028B6AD /* PagerViewController.h */,
+				B400ADB116EF5D950028B6AD /* PagerViewController.m */,
+			);
+			name = PageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +252,8 @@
 				400BF60A16E09B7E00CF6BF4 /* BluetoothLEService.m in Sources */,
 				4081F58716E9F5B80033308E /* BluetoothLEService+SensorTag.m in Sources */,
 				4081F58816E9F5B80033308E /* SensorTag.m in Sources */,
+				B400ADB216EF5D960028B6AD /* CustomPagerViewController.m in Sources */,
+				B400ADB316EF5D960028B6AD /* PagerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +335,10 @@
 				"HEADER_SEARCH_PATHS[arch=*]" = "./CorePlot/**";
 				INFOPLIST_FILE = "BluetoothDiscover/Thermometer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Thermometer-gndxijbgfxjlzgegvctuagzyhvty/Build/Products/Debug-iphoneos\"",
+				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = Thermometer;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,6 +354,10 @@
 				"HEADER_SEARCH_PATHS[arch=*]" = "./CorePlot/**";
 				INFOPLIST_FILE = "BluetoothDiscover/Thermometer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Thermometer-gndxijbgfxjlzgegvctuagzyhvty/Build/Products/Debug-iphoneos\"",
+				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = Thermometer;
 				TARGETED_DEVICE_FAMILY = "1,2";
