@@ -22,5 +22,7 @@
 - (IBAction)connectSwitchSwitched:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *tempLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tempAmbientLabel;
+@property (weak, nonatomic) IBOutlet UILabel *humidityLabel;
+
 
 @end
