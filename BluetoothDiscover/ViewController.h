@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BluetoothLEManager.h"
+#import "BluetoothLEService.h"
+#import "BluetoothLEService+SensorTag.h"
+#import "SensorTag.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <BluetoothLEManagerDelegateProtocol, BluetoothLEServiceProtocol>
+@property (nonatomic, assign) CBPeripheral *peripheral; // We only connect with 1 device at a time
+@property (nonatomic, strong) BluetoothLEService *service;
+@property (weak, nonatomic) IBOutlet UILabel *connectLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *connectSwitch;
+@property (nonatomic, strong) SensorTag *sensorTag;
+- (IBAction)connectSwitchSwitched:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *tempLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tempAmbientLabel;
 
 @end

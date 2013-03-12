@@ -17,18 +17,26 @@
 		400BF5ED16E0979400CF6BF4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400BF5EC16E0979400CF6BF4 /* Default@2x.png */; };
 		400BF5EF16E0979400CF6BF4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400BF5EE16E0979400CF6BF4 /* Default-568h@2x.png */; };
 		400BF5F216E0979400CF6BF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 400BF5F116E0979400CF6BF4 /* ViewController.m */; };
-		400BF5F516E0979400CF6BF4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 400BF5F316E0979400CF6BF4 /* ViewController.xib */; };
+		400BF5FC16E097A300CF6BF4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400BF5FB16E097A300CF6BF4 /* CoreBluetooth.framework */; };
+		400BF60916E09B7E00CF6BF4 /* BluetoothLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 400BF60616E09B7E00CF6BF4 /* BluetoothLEManager.m */; };
+		400BF60A16E09B7E00CF6BF4 /* BluetoothLEService.m in Sources */ = {isa = PBXBuildFile; fileRef = 400BF60816E09B7E00CF6BF4 /* BluetoothLEService.m */; };
+		400BF60C16E0A1E000CF6BF4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400BF60B16E0A1E000CF6BF4 /* Storyboard.storyboard */; };
+		4081F58716E9F5B80033308E /* BluetoothLEService+SensorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 4081F58416E9F5B70033308E /* BluetoothLEService+SensorTag.m */; };
+		4081F58816E9F5B80033308E /* SensorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 4081F58616E9F5B80033308E /* SensorTag.m */; };
+		4081F58A16EA18690033308E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4081F58916EA18690033308E /* Icon@2x.png */; };
+		4081F58C16EA18720033308E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4081F58B16EA18720033308E /* Icon.png */; };
+		B400AD6F16EF4A7A0028B6AD /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B400AD6E16EF4A7A0028B6AD /* Storyboard_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		400BF5D516E0979400CF6BF4 /* BluetoothDiscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothDiscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		400BF5D516E0979400CF6BF4 /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		400BF5D816E0979400CF6BF4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		400BF5DA16E0979400CF6BF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		400BF5DC16E0979400CF6BF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		400BF5E016E0979400CF6BF4 /* BluetoothDiscover-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BluetoothDiscover-Info.plist"; sourceTree = "<group>"; };
+		400BF5E016E0979400CF6BF4 /* Thermometer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Thermometer-Info.plist"; sourceTree = "<group>"; };
 		400BF5E216E0979400CF6BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		400BF5E416E0979400CF6BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		400BF5E616E0979400CF6BF4 /* BluetoothDiscover-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BluetoothDiscover-Prefix.pch"; sourceTree = "<group>"; };
+		400BF5E616E0979400CF6BF4 /* Thermometer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thermometer-Prefix.pch"; sourceTree = "<group>"; };
 		400BF5E716E0979400CF6BF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		400BF5E816E0979400CF6BF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		400BF5EA16E0979400CF6BF4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -36,7 +44,19 @@
 		400BF5EE16E0979400CF6BF4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		400BF5F016E0979400CF6BF4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		400BF5F116E0979400CF6BF4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		400BF5F416E0979400CF6BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		400BF5FB16E097A300CF6BF4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		400BF60516E09B7E00CF6BF4 /* BluetoothLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothLEManager.h; sourceTree = "<group>"; };
+		400BF60616E09B7E00CF6BF4 /* BluetoothLEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothLEManager.m; sourceTree = "<group>"; };
+		400BF60716E09B7E00CF6BF4 /* BluetoothLEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothLEService.h; sourceTree = "<group>"; };
+		400BF60816E09B7E00CF6BF4 /* BluetoothLEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothLEService.m; sourceTree = "<group>"; };
+		400BF60B16E0A1E000CF6BF4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		4081F58316E9F5B70033308E /* BluetoothLEService+SensorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BluetoothLEService+SensorTag.h"; sourceTree = "<group>"; };
+		4081F58416E9F5B70033308E /* BluetoothLEService+SensorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BluetoothLEService+SensorTag.m"; sourceTree = "<group>"; };
+		4081F58516E9F5B70033308E /* SensorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorTag.h; sourceTree = "<group>"; };
+		4081F58616E9F5B80033308E /* SensorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorTag.m; sourceTree = "<group>"; };
+		4081F58916EA18690033308E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		4081F58B16EA18720033308E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B400AD6E16EF4A7A0028B6AD /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400BF5FC16E097A300CF6BF4 /* CoreBluetooth.framework in Frameworks */,
 				400BF5D916E0979400CF6BF4 /* UIKit.framework in Frameworks */,
 				400BF5DB16E0979400CF6BF4 /* Foundation.framework in Frameworks */,
 				400BF5DD16E0979400CF6BF4 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +77,8 @@
 		400BF5CC16E0979400CF6BF4 = {
 			isa = PBXGroup;
 			children = (
+				4081F58B16EA18720033308E /* Icon.png */,
+				4081F58916EA18690033308E /* Icon@2x.png */,
 				400BF5DE16E0979400CF6BF4 /* BluetoothDiscover */,
 				400BF5D716E0979400CF6BF4 /* Frameworks */,
 				400BF5D616E0979400CF6BF4 /* Products */,
@@ -65,7 +88,7 @@
 		400BF5D616E0979400CF6BF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				400BF5D516E0979400CF6BF4 /* BluetoothDiscover.app */,
+				400BF5D516E0979400CF6BF4 /* Thermometer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +96,7 @@
 		400BF5D716E0979400CF6BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				400BF5FB16E097A300CF6BF4 /* CoreBluetooth.framework */,
 				400BF5D816E0979400CF6BF4 /* UIKit.framework */,
 				400BF5DA16E0979400CF6BF4 /* Foundation.framework */,
 				400BF5DC16E0979400CF6BF4 /* CoreGraphics.framework */,
@@ -83,11 +107,20 @@
 		400BF5DE16E0979400CF6BF4 /* BluetoothDiscover */ = {
 			isa = PBXGroup;
 			children = (
+				4081F58316E9F5B70033308E /* BluetoothLEService+SensorTag.h */,
+				4081F58416E9F5B70033308E /* BluetoothLEService+SensorTag.m */,
+				4081F58516E9F5B70033308E /* SensorTag.h */,
+				4081F58616E9F5B80033308E /* SensorTag.m */,
+				400BF60516E09B7E00CF6BF4 /* BluetoothLEManager.h */,
+				400BF60616E09B7E00CF6BF4 /* BluetoothLEManager.m */,
+				400BF60716E09B7E00CF6BF4 /* BluetoothLEService.h */,
+				400BF60816E09B7E00CF6BF4 /* BluetoothLEService.m */,
 				400BF5E716E0979400CF6BF4 /* AppDelegate.h */,
 				400BF5E816E0979400CF6BF4 /* AppDelegate.m */,
 				400BF5F016E0979400CF6BF4 /* ViewController.h */,
 				400BF5F116E0979400CF6BF4 /* ViewController.m */,
-				400BF5F316E0979400CF6BF4 /* ViewController.xib */,
+				400BF60B16E0A1E000CF6BF4 /* Storyboard.storyboard */,
+				B400AD6E16EF4A7A0028B6AD /* Storyboard_iPad.storyboard */,
 				400BF5DF16E0979400CF6BF4 /* Supporting Files */,
 			);
 			path = BluetoothDiscover;
@@ -96,10 +129,10 @@
 		400BF5DF16E0979400CF6BF4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				400BF5E016E0979400CF6BF4 /* BluetoothDiscover-Info.plist */,
+				400BF5E016E0979400CF6BF4 /* Thermometer-Info.plist */,
 				400BF5E116E0979400CF6BF4 /* InfoPlist.strings */,
 				400BF5E416E0979400CF6BF4 /* main.m */,
-				400BF5E616E0979400CF6BF4 /* BluetoothDiscover-Prefix.pch */,
+				400BF5E616E0979400CF6BF4 /* Thermometer-Prefix.pch */,
 				400BF5EA16E0979400CF6BF4 /* Default.png */,
 				400BF5EC16E0979400CF6BF4 /* Default@2x.png */,
 				400BF5EE16E0979400CF6BF4 /* Default-568h@2x.png */,
@@ -110,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		400BF5D416E0979400CF6BF4 /* BluetoothDiscover */ = {
+		400BF5D416E0979400CF6BF4 /* Thermometer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 400BF5F816E0979400CF6BF4 /* Build configuration list for PBXNativeTarget "BluetoothDiscover" */;
+			buildConfigurationList = 400BF5F816E0979400CF6BF4 /* Build configuration list for PBXNativeTarget "Thermometer" */;
 			buildPhases = (
 				400BF5D116E0979400CF6BF4 /* Sources */,
 				400BF5D216E0979400CF6BF4 /* Frameworks */,
@@ -122,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = BluetoothDiscover;
+			name = Thermometer;
 			productName = BluetoothDiscover;
-			productReference = 400BF5D516E0979400CF6BF4 /* BluetoothDiscover.app */;
+			productReference = 400BF5D516E0979400CF6BF4 /* Thermometer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +169,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Klaus Bauernfeind";
 			};
-			buildConfigurationList = 400BF5D016E0979400CF6BF4 /* Build configuration list for PBXProject "BluetoothDiscover" */;
+			buildConfigurationList = 400BF5D016E0979400CF6BF4 /* Build configuration list for PBXProject "Thermometer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				400BF5D416E0979400CF6BF4 /* BluetoothDiscover */,
+				400BF5D416E0979400CF6BF4 /* Thermometer */,
 			);
 		};
 /* End PBXProject section */
@@ -162,7 +195,10 @@
 				400BF5EB16E0979400CF6BF4 /* Default.png in Resources */,
 				400BF5ED16E0979400CF6BF4 /* Default@2x.png in Resources */,
 				400BF5EF16E0979400CF6BF4 /* Default-568h@2x.png in Resources */,
-				400BF5F516E0979400CF6BF4 /* ViewController.xib in Resources */,
+				400BF60C16E0A1E000CF6BF4 /* Storyboard.storyboard in Resources */,
+				4081F58A16EA18690033308E /* Icon@2x.png in Resources */,
+				4081F58C16EA18720033308E /* Icon.png in Resources */,
+				B400AD6F16EF4A7A0028B6AD /* Storyboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +212,10 @@
 				400BF5E516E0979400CF6BF4 /* main.m in Sources */,
 				400BF5E916E0979400CF6BF4 /* AppDelegate.m in Sources */,
 				400BF5F216E0979400CF6BF4 /* ViewController.m in Sources */,
+				400BF60916E09B7E00CF6BF4 /* BluetoothLEManager.m in Sources */,
+				400BF60A16E09B7E00CF6BF4 /* BluetoothLEService.m in Sources */,
+				4081F58716E9F5B80033308E /* BluetoothLEService+SensorTag.m in Sources */,
+				4081F58816E9F5B80033308E /* SensorTag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +228,6 @@
 				400BF5E216E0979400CF6BF4 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		400BF5F316E0979400CF6BF4 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				400BF5F416E0979400CF6BF4 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,9 +293,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BluetoothDiscover/BluetoothDiscover-Prefix.pch";
-				INFOPLIST_FILE = "BluetoothDiscover/BluetoothDiscover-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BluetoothDiscover/Thermometer-Prefix.pch";
+				INFOPLIST_FILE = "BluetoothDiscover/Thermometer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Thermometer;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -272,9 +306,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BluetoothDiscover/BluetoothDiscover-Prefix.pch";
-				INFOPLIST_FILE = "BluetoothDiscover/BluetoothDiscover-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BluetoothDiscover/Thermometer-Prefix.pch";
+				INFOPLIST_FILE = "BluetoothDiscover/Thermometer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Thermometer;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -282,7 +318,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		400BF5D016E0979400CF6BF4 /* Build configuration list for PBXProject "BluetoothDiscover" */ = {
+		400BF5D016E0979400CF6BF4 /* Build configuration list for PBXProject "Thermometer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				400BF5F616E0979400CF6BF4 /* Debug */,
@@ -291,13 +327,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		400BF5F816E0979400CF6BF4 /* Build configuration list for PBXNativeTarget "BluetoothDiscover" */ = {
+		400BF5F816E0979400CF6BF4 /* Build configuration list for PBXNativeTarget "Thermometer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				400BF5F916E0979400CF6BF4 /* Debug */,
 				400BF5FA16E0979400CF6BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
