@@ -100,31 +100,40 @@
         double temp = self.sensorTag.ambientTemperature;
         NSString *scaleAbbreviation = @"C";
         self.tempAmbientLabel.text = [NSString stringWithFormat:@"%0.2fº %@", temp, scaleAbbreviation];
-
+        
         
 	}
-
+    
+    if (self.sensorTag.hasRelativeHumidity)
+    {
+        double hum = self.sensorTag.relativeHumidity;
+        NSString *scaleAbbreviation = @"%";
+        self.humidityLabel.text = [NSString stringWithFormat:@"%0.2f %@", hum, scaleAbbreviation];
+    }
+    
 }
 
 - (void) didDiscoverCharacterisics:(BluetoothLEService *) service
 {
     NSLog(@"start monitoring");
 	[service startMonitoringTemperatureSensor];
+    [service startMonitoringHumiditySensor];
 }
-
 
 - (IBAction)connectSwitchSwitched:(id)sender {
     if(self.connectSwitch.on) {
         [[BluetoothLEManager sharedManager] discoverDevices];
-
+        
     }
     else
     {
         [[BluetoothLEManager sharedManager] disconnectPeripheral:self.peripheral];
         [[BluetoothLEManager sharedManager] stopScanning];
         [self.service stopMonitoringTemperatureSensor];
+        [self.service stopMonitoringHumiditySensor];
         self.tempLabel.text = @"--.--°C";
         self.tempAmbientLabel.text = @"--.--°C";
+        self.humidityLabel.text = @"--.--%";
         
     }
     
