@@ -11,6 +11,7 @@
 #import "BluetoothLEService.h"
 #import "BluetoothLEService+SensorTag.h"
 #import "SensorTag.h"
+#import "CorePlot-CocoaTouch.h"
 
 @interface ViewController : UIViewController <BluetoothLEManagerDelegateProtocol, BluetoothLEServiceProtocol>
 @property (nonatomic, assign) CBPeripheral *peripheral; // We only connect with 1 device at a time
