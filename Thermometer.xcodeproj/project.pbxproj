@@ -58,7 +58,7 @@
 		4081F58916EA18690033308E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		4081F58B16EA18720033308E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B400AD6E16EF4A7A0028B6AD /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
-		B400AD7016EF4CDE0028B6AD /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../CorePlot/Source/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		B400AD7016EF4CDE0028B6AD /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "CorePlot/Source/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
 		B400AD7A16EF4DCC0028B6AD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -100,6 +100,7 @@
 		400BF5D716E0979400CF6BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B400AD7016EF4CDE0028B6AD /* CorePlot-CocoaTouch.xcodeproj */,
 				B400AD7A16EF4DCC0028B6AD /* QuartzCore.framework */,
 				400BF5FB16E097A300CF6BF4 /* CoreBluetooth.framework */,
 				400BF5D816E0979400CF6BF4 /* UIKit.framework */,
@@ -112,7 +113,6 @@
 		400BF5DE16E0979400CF6BF4 /* BluetoothDiscover */ = {
 			isa = PBXGroup;
 			children = (
-				B400AD7016EF4CDE0028B6AD /* CorePlot-CocoaTouch.xcodeproj */,
 				4081F58316E9F5B70033308E /* BluetoothLEService+SensorTag.h */,
 				4081F58416E9F5B70033308E /* BluetoothLEService+SensorTag.m */,
 				4081F58516E9F5B70033308E /* SensorTag.h */,
