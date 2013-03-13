@@ -30,6 +30,9 @@
 		B400ADB216EF5D960028B6AD /* CustomPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B400ADAF16EF5D950028B6AD /* CustomPagerViewController.m */; };
 		B400ADB316EF5D960028B6AD /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B400ADB116EF5D950028B6AD /* PagerViewController.m */; };
 		B400ADB916EF69370028B6AD /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B400ADB816EF69370028B6AD /* libCorePlot-CocoaTouch.a */; };
+		B474063F16F0B63E00AAFE1C /* ObjTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B474063E16F0B63E00AAFE1C /* ObjTempViewController.m */; };
+		B474064716F0C67400AAFE1C /* AmbTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B474064616F0C67400AAFE1C /* AmbTempViewController.m */; };
+		B4E04F7216F0CA52007E60CC /* HumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E04F7116F0CA52007E60CC /* HumViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,12 @@
 		B400ADB016EF5D950028B6AD /* PagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
 		B400ADB116EF5D950028B6AD /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
 		B400ADB816EF69370028B6AD /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCorePlot-CocoaTouch.a"; path = "../../../../Library/Developer/Xcode/DerivedData/Thermometer-gndxijbgfxjlzgegvctuagzyhvty/Build/Products/Debug-iphoneos/libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
+		B474063D16F0B63E00AAFE1C /* ObjTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjTempViewController.h; sourceTree = "<group>"; };
+		B474063E16F0B63E00AAFE1C /* ObjTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjTempViewController.m; sourceTree = "<group>"; };
+		B474064516F0C67400AAFE1C /* AmbTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmbTempViewController.h; sourceTree = "<group>"; };
+		B474064616F0C67400AAFE1C /* AmbTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmbTempViewController.m; sourceTree = "<group>"; };
+		B4E04F7016F0CA52007E60CC /* HumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumViewController.h; sourceTree = "<group>"; };
+		B4E04F7116F0CA52007E60CC /* HumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +148,12 @@
 				400BF5E816E0979400CF6BF4 /* AppDelegate.m */,
 				400BF5F016E0979400CF6BF4 /* ViewController.h */,
 				400BF5F116E0979400CF6BF4 /* ViewController.m */,
+				B474063D16F0B63E00AAFE1C /* ObjTempViewController.h */,
+				B474063E16F0B63E00AAFE1C /* ObjTempViewController.m */,
+				B474064516F0C67400AAFE1C /* AmbTempViewController.h */,
+				B474064616F0C67400AAFE1C /* AmbTempViewController.m */,
+				B4E04F7016F0CA52007E60CC /* HumViewController.h */,
+				B4E04F7116F0CA52007E60CC /* HumViewController.m */,
 				400BF60B16E0A1E000CF6BF4 /* Storyboard.storyboard */,
 				B400AD6E16EF4A7A0028B6AD /* Storyboard_iPad.storyboard */,
 				400BF5DF16E0979400CF6BF4 /* Supporting Files */,
@@ -288,6 +303,9 @@
 				4081F58816E9F5B80033308E /* SensorTag.m in Sources */,
 				B400ADB216EF5D960028B6AD /* CustomPagerViewController.m in Sources */,
 				B400ADB316EF5D960028B6AD /* PagerViewController.m in Sources */,
+				B474063F16F0B63E00AAFE1C /* ObjTempViewController.m in Sources */,
+				B474064716F0C67400AAFE1C /* AmbTempViewController.m in Sources */,
+				B4E04F7216F0CA52007E60CC /* HumViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
