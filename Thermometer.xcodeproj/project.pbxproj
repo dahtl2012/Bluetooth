@@ -386,7 +386,7 @@
 				GCC_PREFIX_HEADER = "BluetoothDiscover/Thermometer-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = "./CorePlot/**";
 				INFOPLIST_FILE = "BluetoothDiscover/Thermometer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Thermometer-gndxijbgfxjlzgegvctuagzyhvty/Build/Products/Debug-iphoneos\"",
@@ -405,7 +405,7 @@
 				GCC_PREFIX_HEADER = "BluetoothDiscover/Thermometer-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = "./CorePlot/**";
 				INFOPLIST_FILE = "BluetoothDiscover/Thermometer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Thermometer-gndxijbgfxjlzgegvctuagzyhvty/Build/Products/Debug-iphoneos\"",

@@ -96,7 +96,7 @@
 	{
 		double temp = self.sensorTag.objectTemperature;
         NSString *scaleAbbreviation = @"C";
-        self.tempLabel.text = [NSString stringWithFormat:@"%0.2fº %@", temp, scaleAbbreviation];
+        //self.tempLabel.text = [NSString stringWithFormat:@"%0.2fº %@", temp, scaleAbbreviation];
         ObjTempViewController *controller = [self.parentViewController.childViewControllers objectAtIndex:1];
         [controller.tempData addObject:[NSDecimalNumber numberWithDouble:temp]];
         controller.tempLabel.text = [NSString stringWithFormat:@"%0.2fº %@", temp, scaleAbbreviation];
@@ -107,7 +107,7 @@
 	{
         double temp = self.sensorTag.ambientTemperature;
         NSString *scaleAbbreviation = @"C";
-        self.tempAmbientLabel.text = [NSString stringWithFormat:@"%0.2fº %@", temp, scaleAbbreviation];
+        //self.tempAmbientLabel.text = [NSString stringWithFormat:@"%0.2fº %@", temp, scaleAbbreviation];
         AmbTempViewController *controller = [self.parentViewController.childViewControllers objectAtIndex:2];
         [controller.tempData addObject:[NSDecimalNumber numberWithDouble:temp]];
         controller.tempLabel.text = [NSString stringWithFormat:@"%0.2fº %@", temp, scaleAbbreviation];
@@ -118,7 +118,7 @@
     {
         double hum = self.sensorTag.relativeHumidity;
         NSString *scaleAbbreviation = @"%";
-        self.humidityLabel.text = [NSString stringWithFormat:@"%0.2f %@", hum, scaleAbbreviation];
+        //self.humidityLabel.text = [NSString stringWithFormat:@"%0.2f %@", hum, scaleAbbreviation];
         HumViewController *controller = [self.parentViewController.childViewControllers objectAtIndex:3];
         [controller.data addObject:[NSDecimalNumber numberWithDouble:hum]];
         controller.humLabel.text = [NSString stringWithFormat:@"%0.2fº %@", hum, scaleAbbreviation];
