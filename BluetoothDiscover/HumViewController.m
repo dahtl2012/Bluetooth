@@ -28,7 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.data = [[NSMutableArray alloc] init];
-    
+    self.rangeLabel.text = [NSString stringWithFormat:@"Messwerte im Diagramm: %0.0f", self.rangeSlider.value];
     [self graphInit];
 }
 
@@ -76,7 +76,14 @@
 }
 
 -(void)rangeUpdate {
-    //NSLog(@"%@", self.tempData);
+    
+    if (self.data.count > self.rangeSlider.value) {
+        
+        while (self.data.count > self.rangeSlider.value) {
+            [self.data removeObjectAtIndex:0];
+        }
+    }
+    
     NSArray *array = self.data;
     NSSortDescriptor *sortDescriptor;
     sortDescriptor = [[NSSortDescriptor alloc] initWithKey:nil
@@ -99,6 +106,10 @@
     self.plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(xmin)
                                                          length:CPTDecimalFromFloat(xmax)];
     [self.tempGraph reloadData];
+}
+
+- (IBAction)rangeSliderSlided:(id)sender {
+    self.rangeLabel.text = [NSString stringWithFormat:@"Messwerte im Diagramm: %0.0f", self.rangeSlider.value];
 }
 
 -(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot {

@@ -92,7 +92,7 @@
 	}
     [self.sensorTag processCharacteristicDataWithServiceID:serviceUUID withCharacteristicID:characteristicUUID withData:data];
     
-    if (self.sensorTag.hasObjectTemperature)
+    if ((self.sensorTag.hasObjectTemperature) && (self.objTempSwitch.isOn))
 	{
 		double temp = self.sensorTag.objectTemperature;
         NSString *scaleAbbreviation = @"C";
@@ -103,7 +103,7 @@
         [controller rangeUpdate];
 	}
     
-    if (self.sensorTag.hasAmbientTemperature)
+    if ((self.sensorTag.hasAmbientTemperature) && (self.ambTempSwitch.isOn))
 	{
         double temp = self.sensorTag.ambientTemperature;
         NSString *scaleAbbreviation = @"C";
@@ -114,7 +114,7 @@
         [controller rangeUpdate];
 	}
     
-    if (self.sensorTag.hasRelativeHumidity)
+    if ((self.sensorTag.hasRelativeHumidity) && (self.humSwitch.isOn))
     {
         double hum = self.sensorTag.relativeHumidity;
         NSString *scaleAbbreviation = @"%";
