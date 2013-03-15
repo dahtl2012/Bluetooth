@@ -53,7 +53,13 @@
     CPTXYAxisSet *axisSet = (CPTXYAxisSet *)self.tempGraph.axisSet;     // Achsen erzeugen um Anpassungen zu machen
     CPTXYAxis *x = axisSet.xAxis;       // x-Achse definieren
     x.majorIntervalLength = CPTDecimalFromString(@"1.0");   // Punkteabstand auf der x-Achse
-    x.minorTicksPerInterval = 1;    // Anzahl der kleinen Punkte zwischen den Punkten
+    x.minorTicksPerInterval = 0;    // Anzahl der kleinen Punkte zwischen den Punkten
+    x.majorGridLineStyle = [CPTLineStyle lineStyle];
+    
+    CPTXYAxis *y = axisSet.yAxis;       // y-Achse definieren
+    y.majorIntervalLength = CPTDecimalFromString(@"10.0");   // Punkteabstand auf der y-Achse
+    y.minorTicksPerInterval = 1;    // Anzahl der kleinen Punkte zwischen den Punkten
+    y.majorGridLineStyle = [CPTLineStyle lineStyle];
     
     // Define the space for the steps.
     self.plotSpace = (CPTXYPlotSpace *)self.tempGraph.defaultPlotSpace;      // Platz erstellen, wo die Kurven gezeichnet werden
@@ -61,6 +67,10 @@
                                                          length:CPTDecimalFromFloat(30)];
     self.plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0)      // Bereich der x-Achse einstellen
                                                          length:CPTDecimalFromFloat(11)];
+    
+    self.tempGraph.plotAreaFrame.paddingBottom = 10.0;
+    self.tempGraph.plotAreaFrame.paddingLeft = 40.0;
+    
     
     // ScatterPlot Temp
     CPTScatterPlot *linePlot = [[CPTScatterPlot alloc] init];   // Liniendiagramm initialisieren
@@ -75,6 +85,7 @@
     [self.tempGraph addPlot: linePlot];     // Das Liniendiagramm zum Diagramm hinzufügen
 }
 
+
 -(void)rangeUpdate {
     
     if (self.data.count > self.rangeSlider.value) {
@@ -83,7 +94,7 @@
             [self.data removeObjectAtIndex:0];
         }
     }
-    
+    //NSLog(@"%d", self.tempData.count);
     NSArray *array = self.data;
     NSSortDescriptor *sortDescriptor;
     sortDescriptor = [[NSSortDescriptor alloc] initWithKey:nil
@@ -105,6 +116,16 @@
                                                          length:CPTDecimalFromFloat(ymax + 1)];
     self.plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(xmin)
                                                          length:CPTDecimalFromFloat(xmax)];
+    
+    
+    CPTXYAxisSet *axisSet = (CPTXYAxisSet *)self.tempGraph.axisSet;     // Achsen erzeugen um Anpassungen zu machen
+    
+    CPTXYAxis *y = axisSet.yAxis;       // y-Achse definieren
+    y.majorIntervalLength = CPTDecimalFromString(@"10.0");   // Punkteabstand auf der y-Achse
+    y.minorTicksPerInterval = 1;    // Anzahl der kleinen Punkte zwischen den Punkten
+    
+    
+    
     [self.tempGraph reloadData];
 }
 

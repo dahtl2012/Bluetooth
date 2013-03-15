@@ -347,69 +347,6 @@
             <point key="canvasLocation" x="877" y="-1314"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AmbTempViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AmbTempViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="rangeSliderSlided:"/>
-                <relationship kind="action" name="resetDiagram:"/>
-                <relationship kind="outlet" name="graphView" candidateClass="CPTGraphHostingView"/>
-                <relationship kind="outlet" name="rangeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rangeSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CPTGraphHostingView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CPTGraphHostingView.h"/>
-        </class>
-        <class className="CustomPagerViewController" superclassName="PagerViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomPagerViewController.h"/>
-        </class>
-        <class className="HumViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HumViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="rangeSliderSlided:"/>
-                <relationship kind="action" name="resetDiagram:"/>
-                <relationship kind="outlet" name="graphView" candidateClass="CPTGraphHostingView"/>
-                <relationship kind="outlet" name="humLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rangeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rangeSlider" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-        <class className="ObjTempViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ObjTempViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="rangeSliderSlided:"/>
-                <relationship kind="action" name="resetDiagram:"/>
-                <relationship kind="outlet" name="graphView" candidateClass="CPTGraphHostingView"/>
-                <relationship kind="outlet" name="rangeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rangeSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="PagerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePage:"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="connectSwitchSwitched:"/>
-                <relationship kind="outlet" name="ambTempSwitch" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="connectLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="connectSwitch" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="humSwitch" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="humidityLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="objTempSwitch" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="tempAmbientLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
