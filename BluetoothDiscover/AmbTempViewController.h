@@ -14,6 +14,8 @@
 @property NSMutableArray *tempData;
 
 @property (weak, nonatomic) IBOutlet UILabel *tempLabel;
+@property (weak, nonatomic) IBOutlet UILabel *rangeLabel;
+@property (weak, nonatomic) IBOutlet UISlider *rangeSlider;
 
 @property (weak, nonatomic) IBOutlet CPTGraphHostingView *graphView;
 @property CPTXYGraph *tempGraph;        // Diagramm
@@ -22,5 +24,6 @@
 - (IBAction)resetDiagram:(id)sender;
 
 - (void) rangeUpdate;
+- (IBAction)rangeSliderSlided:(id)sender;
 
 @end

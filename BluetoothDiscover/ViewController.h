@@ -23,6 +23,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *tempAmbientLabel;
 @property (weak, nonatomic) IBOutlet UILabel *humidityLabel;
 
+@property (weak, nonatomic) IBOutlet UISwitch *objTempSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *ambTempSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *humSwitch;
 
 @property int index;
 
