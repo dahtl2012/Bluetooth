@@ -100,6 +100,7 @@
         ObjTempViewController *controller = [self.parentViewController.childViewControllers objectAtIndex:1];
         [controller.tempData addObject:[NSDecimalNumber numberWithDouble:temp]];
         controller.tempLabel.text = [NSString stringWithFormat:@"%0.2fº %@", temp, scaleAbbreviation];
+        
         [controller rangeUpdate];
 	}
     
@@ -111,6 +112,8 @@
         AmbTempViewController *controller = [self.parentViewController.childViewControllers objectAtIndex:2];
         [controller.tempData addObject:[NSDecimalNumber numberWithDouble:temp]];
         controller.tempLabel.text = [NSString stringWithFormat:@"%0.2fº %@", temp, scaleAbbreviation];
+
+        
         [controller rangeUpdate];
 	}
     
