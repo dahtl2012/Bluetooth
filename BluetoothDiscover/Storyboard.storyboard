@@ -214,7 +214,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="graphView" destination="Jik-Ee-HwX" id="fBC-AS-QTK"/>
-                        <outlet property="tempLabel" destination="85x-Cz-SPn" id="w3Y-q5-lcr"/>
+                        <outlet property="tempLabel" destination="85x-Cz-SPn" id="eTA-MR-zuH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Is-aK-Vez" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,7 +269,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="graphView" destination="Dvj-vP-7WQ" id="I6i-kE-ocB"/>
-                        <outlet property="humLabel" destination="rVa-AI-hsv" id="Uen-lj-u3H"/>
+                        <outlet property="humLabel" destination="rVa-AI-hsv" id="Rja-f3-AUI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBU-og-pdd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -339,7 +339,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="graphView" destination="HKw-Mq-6qg" id="v1S-QC-mce"/>
-                        <outlet property="tempLabel" destination="RHo-Er-PbK" id="2Ql-k0-zHr"/>
+                        <outlet property="tempLabel" destination="RHo-Er-PbK" id="Aiu-bL-eUb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLg-51-9eu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -351,8 +351,11 @@
         <class className="AmbTempViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AmbTempViewController.h"/>
             <relationships>
+                <relationship kind="action" name="rangeSliderSlided:"/>
                 <relationship kind="action" name="resetDiagram:"/>
                 <relationship kind="outlet" name="graphView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="rangeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rangeSlider" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -365,16 +368,22 @@
         <class className="HumViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HumViewController.h"/>
             <relationships>
+                <relationship kind="action" name="rangeSliderSlided:"/>
                 <relationship kind="action" name="resetDiagram:"/>
                 <relationship kind="outlet" name="graphView" candidateClass="CPTGraphHostingView"/>
                 <relationship kind="outlet" name="humLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rangeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rangeSlider" candidateClass="UISlider"/>
             </relationships>
         </class>
         <class className="ObjTempViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ObjTempViewController.h"/>
             <relationships>
+                <relationship kind="action" name="rangeSliderSlided:"/>
                 <relationship kind="action" name="resetDiagram:"/>
                 <relationship kind="outlet" name="graphView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="rangeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rangeSlider" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -390,9 +399,12 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="connectSwitchSwitched:"/>
+                <relationship kind="outlet" name="ambTempSwitch" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="connectLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="connectSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="humSwitch" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="humidityLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="objTempSwitch" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="tempAmbientLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
             </relationships>
