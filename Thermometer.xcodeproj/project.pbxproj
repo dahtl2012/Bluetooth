@@ -109,7 +109,6 @@
 		400BF5CC16E0979400CF6BF4 = {
 			isa = PBXGroup;
 			children = (
-				B400ADB816EF69370028B6AD /* libCorePlot-CocoaTouch.a */,
 				4081F58B16EA18720033308E /* Icon.png */,
 				4081F58916EA18690033308E /* Icon@2x.png */,
 				400BF5DE16E0979400CF6BF4 /* BluetoothDiscover */,
@@ -130,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B400AD7016EF4CDE0028B6AD /* CorePlot-CocoaTouch.xcodeproj */,
+				B400ADB816EF69370028B6AD /* libCorePlot-CocoaTouch.a */,
 				B400AD7A16EF4DCC0028B6AD /* QuartzCore.framework */,
 				400BF5FB16E097A300CF6BF4 /* CoreBluetooth.framework */,
 				400BF5D816E0979400CF6BF4 /* UIKit.framework */,
