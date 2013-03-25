@@ -121,7 +121,7 @@
     
     CPTXYAxisSet *axisSet = (CPTXYAxisSet *)self.tempGraph.axisSet;     // Achsen erzeugen um Anpassungen zu machen
     
-    CPTXYAxis *x = axisSet.xAxis;
+    //CPTXYAxis *x = axisSet.xAxis;
     
     CPTXYAxis *y = axisSet.yAxis;       // y-Achse definieren
     y.majorIntervalLength = CPTDecimalFromString(@"10.0");   // Punkteabstand auf der y-Achse
